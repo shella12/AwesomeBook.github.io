@@ -1,6 +1,5 @@
-import book from './JS/book-list';
+import book from './JS/bookList.js';
 
-const btn=document.getElementById('btn');
 const ulist=document.querySelector('.book-list');
 const para=document.querySelector('.book-list p');
 const form=document.querySelector('.form');

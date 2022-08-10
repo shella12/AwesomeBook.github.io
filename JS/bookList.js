@@ -1,6 +1,5 @@
- book = (title,author)=>{
+ const book = (title,author)=>{
 
-    console.log(title, author);
     const list= document.createElement('li');
       list.innerHTML = `
       <p>"${title}" by ${author}</p>
