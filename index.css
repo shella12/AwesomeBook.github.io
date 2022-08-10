@@ -5,3 +5,132 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* --header-- */
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header nav,footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1.3rem;
+  margin: 1rem;
+  border: 5px solid #000;
+}
+
+header h1,footer h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li{
+  font-weight: normal; 
+  padding: 0 0.7rem;
+}
+nav ul li:nth-child(2){
+  padding: 0 .7rem;
+  border:3px solid transparent;
+  border-left-color:#000;
+  border-right-color:#000;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+header p{
+  align-self: flex-end;
+  padding: 0 1.3rem;
+  margin: 0 1rem 0.5rem 0;
+}
+
+/* --main-- */
+
+section{
+  padding: 2rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.list ul {
+  width: 100%;
+  list-style: none;
+  margin: 1rem;
+  border: 5px solid #000;
+  padding: 1rem;
+  overflow-y:scroll;
+}
+.list ul p{
+  text-align: center;
+}
+
+.list ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 1.3rem;
+}
+
+.list ul li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.list ul li:nth-child(even) {
+  background-color: white;
+}
+
+.add-new .form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 20%;
+}
+
+.add-new .form input{
+  width: 100%;
+  margin: 0.4rem;
+  padding: 0.5rem;
+  border: 2px solid #000;
+}
+
+.add-new .form button,.remove-btn{
+  align-self: flex-end;
+  border: 2px solid #000;
+  padding: 0.3rem 0.8rem;
+  box-shadow: 5px 3px 2px 0px #000;
+-webkit-box-shadow: 5px 3px 2px 0px #000;
+-moz-box-shadow: 5px 3px 2px 0px #000;
+}
+
+.add-new .form button:active,.remove-btn:active{
+  scale: 0.9;
+}
+
+.contact .contact-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 2rem 25%;
+
+}
+.contact ul{
+padding:1rem 1.45rem;
+}
+
+.contact p,.contact ul li{
+  font-size: 1.3rem; 
+}
