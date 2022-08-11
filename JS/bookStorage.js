@@ -8,5 +8,4 @@ class Book {
 
 export default function (title, author) {
   bookArray.push(new Book(title, author));
-  console.log(bookArray);
 }

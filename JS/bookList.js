@@ -11,7 +11,6 @@ const book = (title, author, index) => {
   removeButton.id = index;
   removeButton.className = 'remove-btn';
   removeButton.addEventListener('click', (event) => {
-    console.log(event.target.id);
     const removeId = parseInt(event.target.id);
     bookArray.splice(removeId, 1);
     addNewList();

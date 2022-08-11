@@ -1,6 +1,5 @@
 import { DateTime } from './luxon.js';
 
-console.log(DateTime.now().toString());
 const currentDate = document.body.querySelector('p.date');
 
 const date = () => {
