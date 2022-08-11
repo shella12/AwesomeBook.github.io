@@ -43,7 +43,9 @@ nav ul li:nth-child(2){
   border-left-color:#000;
   border-right-color:#000;
 }
-
+nav ul li a.active{
+  color: blue;
+}
 a{
   text-decoration: none;
   color: inherit;
@@ -58,8 +60,11 @@ header p{
 /* --main-- */
 
 section{
-  padding: 2rem 1.3rem;
+  display: none;
+}
+section.active{
   display: flex;
+  padding: 2rem 1.3rem;
   flex-direction: column;
   align-items: center;
   width: 100%;
