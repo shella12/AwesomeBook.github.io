@@ -1,6 +1,4 @@
-
 /* eslint-disable */
-
 class e extends Error {} class z extends e {constructor(e) { super(`Invalid DateTime: ${e.toMessage()}`); }} class q extends e {constructor(e) { super(`Invalid Interval: ${e.toMessage()}`); }} class A extends e {constructor(e) { super(`Invalid Duration: ${e.toMessage()}`); }} class j extends e {} class _ extends e {constructor(e) { super(`Invalid unit ${e}`); }} class o extends e {} class r extends e {constructor() { super('Zone is an abstract class'); }} var t = 'numeric'; var n = 'short'; var s = 'long'; const U = { year: t, month: t, day: t }; const $ = { year: t, month: n, day: t }; const H = {
   year: t, month: n, day: t, weekday: n,
 }; const W = { year: t, month: s, day: t }; const R = {
@@ -861,4 +859,3 @@ class e extends Error {} class z extends e {constructor(e) { super(`Invalid Date
 } function On(e) { if (L.isDateTime(e)) return e; if (e && e.valueOf && c(e.valueOf())) return L.fromJSDate(e); if (e && typeof e === 'object') return L.fromObject(e); throw new o(`Unknown datetime argument: ${e}, of type ${typeof e}`); }s = '3.0.1'; export {
   L as DateTime, V as Duration, v as FixedOffsetZone, w as IANAZone, Sr as Info, I as Interval, nt as InvalidZone, k as Settings, Ge as SystemZone, s as VERSION, i as Zone,
 };
-

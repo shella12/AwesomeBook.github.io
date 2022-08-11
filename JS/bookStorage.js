@@ -1,6 +1,6 @@
 export const bookArray = [];
 class Book {
-  constructor(title, author, id) {
+  constructor(title, author) {
     this.title = title;
     this.author = author;
   }

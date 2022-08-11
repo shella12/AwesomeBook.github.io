@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { bookArray } from './bookStorage.js';
 import addNewList from './add-books.js';
 
@@ -11,7 +12,7 @@ const book = (title, author, index) => {
   removeButton.id = index;
   removeButton.className = 'remove-btn';
   removeButton.addEventListener('click', (event) => {
-    const removeId = parseInt(event.target.id);
+    const removeId = Number(event.target.id);
     bookArray.splice(removeId, 1);
     addNewList();
     list.remove();
