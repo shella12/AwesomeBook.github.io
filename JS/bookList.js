@@ -1,27 +1,24 @@
-import { bookArray } from "./bookStorage.js";
-import addNewList from "./add-books.js";
- const book = (title,author,index)=>{
+import { bookArray } from './bookStorage.js';
+import addNewList from './add-books.js';
 
-
-    const list= document.createElement('li');
-      list.innerHTML = `
+const book = (title, author, index) => {
+  const list = document.createElement('li');
+  list.innerHTML = `
       <p>"${title}" by ${author}</p>
     `;
-      const removeButton=document.createElement('button');
-      removeButton.innerText="Remove";
-      removeButton.id=index;
-      removeButton.className="remove-btn";
-      removeButton.addEventListener('click',(event)=>{
-        console.log(event.target.id);  
-        let removeId=parseInt(event.target.id)
-        bookArray.splice(removeId,1);
-        addNewList();
-        list.remove();
-  
-      });
-      list.appendChild(removeButton);
-      return list;
-  
-}
+  const removeButton = document.createElement('button');
+  removeButton.innerText = 'Remove';
+  removeButton.id = index;
+  removeButton.className = 'remove-btn';
+  removeButton.addEventListener('click', (event) => {
+    console.log(event.target.id);
+    const removeId = parseInt(event.target.id);
+    bookArray.splice(removeId, 1);
+    addNewList();
+    list.remove();
+  });
+  list.appendChild(removeButton);
+  return list;
+};
 
 export default book;
