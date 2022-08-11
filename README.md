@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://shella12.github.io/AwesomeBook.github.io/)
 
 
 ## Getting Started
