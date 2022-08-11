@@ -1,4 +1,7 @@
- const book = (title,author)=>{
+import { bookArray } from "./bookStorage.js";
+import addNewList from "./add-books.js";
+ const book = (title,author,index)=>{
+
 
     const list= document.createElement('li');
       list.innerHTML = `
@@ -6,10 +9,14 @@
     `;
       const removeButton=document.createElement('button');
       removeButton.innerText="Remove";
+      removeButton.id=index;
       removeButton.className="remove-btn";
-  
-      removeButton.addEventListener('click',()=>{
-          list.remove();
+      removeButton.addEventListener('click',(event)=>{
+        console.log(event.target.id);  
+        let removeId=parseInt(event.target.id)
+        bookArray.splice(removeId,1);
+        addNewList();
+        list.remove();
   
       });
       list.appendChild(removeButton);
