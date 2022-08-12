@@ -1,4 +1,3 @@
-/* eslint-disable */
 import book from './bookList.js';
 import { bookArray } from './bookStorage.js';
 
